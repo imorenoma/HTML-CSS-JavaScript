@@ -1,0 +1,45 @@
+body{
+	
+	background-image: url("images.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-color: blue;
+	text-align: center;
+}
+
+button{
+
+	background-color: #6E6E6E;
+	box-shadow: 0 3px 0px 0px #2E2EFE;
+	border-radius: 20px;
+}
+
+
+h2{
+
+	font-family: comic sans Ms;
+	color : black;
+
+}
+
+#resultado{
+
+	font-size: 26px;
+	font-weight: 700;
+}
+
+#refresh{
+
+	background-color: #6E6E6E;
+	border-radius: 20px;
+	box-shadow: 0 3px 0px 0px #DF013A;
+}
+
+#respuesta{
+
+	height: 30px;
+	width: 300px;
+	border-radius: 10px;
+
+}
+

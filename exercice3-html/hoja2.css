@@ -1,0 +1,62 @@
+/*******************************************
+**  En esta hojavamos a definir el estilo del
+**  menu horizontal
+*******************************************/
+
+body{
+
+	background-image: url("im1.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+ul{
+
+	list-style-type: note;
+	margin: 0px;
+	padding: 0px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #01DF01;
+}
+
+
+li{
+
+	display:inline;
+}
+
+
+a{
+
+	font-family: "comic sans Ms";
+	color: blue;
+	font-size: 12px;
+	display: block;
+	padding: 6px;
+	float: left;
+
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #01DF01;
+
+	background-color: #00FFFF;
+
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #01DF01;
+
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #01DF01;
+}
+
+a:hover{
+
+	color:#FFF;
+	background-color: #0080FF;
+}
+
+.clear{
+	clear: both;
+}

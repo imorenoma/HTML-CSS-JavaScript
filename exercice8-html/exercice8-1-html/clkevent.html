@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+
+
+	<meta charset="utf-8">
+	<title>Evernto Fecha</title>
+	<link rel="stylesheet" type="text/css" href="hoja.css">
+	<script type="text/javascript">
+
+		function mostrar_fecha (){
+
+			var cl = new Date();
+			var hora = cl.getHours();
+			var min = cl.getMinutes();
+			var seg = cl.getSeconds();
+			var mms = cl.getMilliseconds();	
+
+			var clk = hora +" : " + min+" : " + seg +" : "+ mms;	
+
+			var fechaString = document.getElementById("fecha");
+	        fechaString.innerHTML = clk;
+			
+		}
+
+
+		function start_stop (){
+
+			if (stop !== null){
+
+                clearInterval(stop);
+                stop = null;
+
+            }else{
+
+                stop = setInterval(mostrar_fecha, 1000);
+                        
+            }
+		}
+
+	</script>
+</head>
+
+<body>
+
+	<h2>Reloj con Event</h2>
+
+	<div id="fecha"></div>
+
+	<script TYPE="text/javascript">
+
+		
+		mostrar_fecha();
+
+        var stop = null;
+        stop = setInterval(mostrar_fecha, 1000); 
+
+        var fechaParar = document.getElementById("fecha");
+        fechaParar.addEventListener('click',function(){start_stop()});
+
+	</script>
+
+</body>

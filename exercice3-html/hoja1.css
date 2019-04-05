@@ -1,0 +1,72 @@
+/*En esta hoja de estilo vamos a realizar
+* los cambios de estilo en los enlace y enla lista
+* ademas de utilizar el hover*/
+
+
+/***********************************
+** 			Estilo 				  **
+** 	  para la etiqueta ul		  **
+************************************/
+
+
+ul{
+
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px; /*le quitamos los puntos a la lista*/
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+
+	border-top-style: solid;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-bottom-style: groove;
+
+	border-top-color: #58D3F7;
+	border-left-color: #58D3F7;
+	border-right-color: #58D3F7;
+	border-bottom-color:#58D3F7; 
+
+	width: 10%; /* con esto hacemos el recuadrito lo hacemos mas pequeño*/
+
+}
+
+li{
+	display: inline;
+}
+
+/***********************************
+** 			Estilo 				  **
+** 	 para los enlaces <a> y hover **
+************************************/
+
+a{
+	font-family: "comic sans Ms";
+	color: black;
+	text-decoration: underline; /*con esto subrayamos los enlaces*/
+	display: block; /*con esta linea evitamos poner los menus en Htal.*/
+	padding: 8px;
+	border-right-width: 0px;
+	border-right-style: solid;
+	border-right-color: #58D3F7;
+
+
+}
+
+a:hover{
+
+	background-color: blue;
+	border-bottom-width: 1px;
+	border-bottom-style: groove;
+	border-bottom-color: transparent;
+
+}
+
+body{
+
+	background-image: url("im1.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}

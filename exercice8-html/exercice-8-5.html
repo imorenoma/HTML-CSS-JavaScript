@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Bucle While</title>
+	
+
+</head>
+
+<body>
+
+	<script type="text/javascript">
+
+		
+		var resultado = 0;
+		var Fail="";
+
+		numero = prompt("Dame un numero : \n\n" + "Escriba acabar para finalizar suma");
+
+		while(numero !== "acabar"){
+
+			if(numero === null || isNaN(numero) || numero ===""){
+
+				Fail = 'Pulsa F5 para actualizar\n\n';
+
+			}else{
+
+				resultado+=0 + parseFloat(numero) 
+				Fail="";
+			}
+
+
+			numero = prompt(Fail+'Ingrese el número a sumar \n\n' + 'Escriba acabar para finalizar la suma' + '\n\nSuma parcial: '+ resultado);
+		}
+
+		document.write('la suma total es: ' + resultado);
+
+
+	</script>
+</body>
+</html>

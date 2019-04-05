@@ -1,0 +1,50 @@
+/*hoja de estilos para el cronómetro*/
+
+h2{
+
+	padding-left: 80px;
+}
+
+body{
+
+
+	background-image: url(im1.jpg);
+	background-repeat: repeat;
+	background-size: 100%auto;
+
+}
+
+#div1{
+    top: 180px;  
+    position: absolute;  
+    width: 254px;  
+    padding: 90px;
+}
+#div2{
+    top: 300px;  
+    position: absolute;  
+    padding: 70px;
+}
+
+
+#cambiar{
+
+	border-radius: 10px;
+	background-color: #04B404;
+	font-weight: 700;
+}
+
+#inicializar{
+
+	border-radius: 10px;
+	background-color: #FF0000;
+	font-weight: 700;
+}
+
+#txtRegStatus{
+
+	border-color: solid;
+
+}
+
+

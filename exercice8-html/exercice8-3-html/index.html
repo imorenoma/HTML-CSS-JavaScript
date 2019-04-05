@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset = "utf-8">
+	<title>Pregunta(jQuery)</title>
+	<link rel="stylesheet" type="text/css" href="hoja.css">
+
+	<script type="text/javascript" src= "zepto.min.js"></script>
+	<script type="text/javascript">
+
+	
+     $(function(){
+
+         $("#boton").on('click', function(){
+
+             if ($('#respuesta').val() === "Cristobal Colón"||$('#respuesta').val() === "CRISTOBAL COLÓN" || $('#respuesta').val() === "cristobal colón"){
+
+                 $('#resultado').html("Correcto, pulsa Actualizar para volver a empezar");
+
+             }else{
+
+                 $('#resultado').html("No es correcto");
+                 $('#respuesta').val("Prueba otra vez");
+            }
+        });
+    });
+	</script>
+
+</head>
+
+<body>
+
+
+	<h4>¿Quién descubrió América?</h4>
+	
+	<div id="texto">
+
+	<input type= "text" id = "respuesta" onclick="if(this.value=='Responda aquí' || this.value == 'Prueba otra vez')this.value='';" value = "Responda aquí">
+	<button type = "button" id ="boton">Consultar</button>
+	<button type ="button" id ="refresh" onclick="document.location.reload(true);" value = "Actualizar">Actualizar</button>
+
+	<p><div id="resultado"/>
+
+	</div>	
+
+</body>
+</html>

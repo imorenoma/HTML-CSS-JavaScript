@@ -1,0 +1,86 @@
+/****************************
+**     Definicion 		   **
+**	                       **
+**   hoja de estilos       **
+*****************************/
+
+
+@font-face {
+
+	font-family: 'FiraMono';
+	font-style: normal;
+	src: local('Fira Mono OT'), url(Fira Mono OT.ttf);
+	src: local('Fira Mono OT'), url(Fira Mono OT.eot);
+
+}
+
+@font-face {
+  font-family: 'Caesar Dressing';
+  font-style: normal;  
+  font-weight: 400;
+  src: local('Caesar Dressing'), local('CaesarDressing-Regular'), url(http://themes.googleusercontent.com/static/fonts/caesardressing/v3/2T_WzBgE2Xz3FsyJMq34T2P6V2CHcxaChb7jOf5qsHM.woff) format('woff');
+}
+
+/*******************************************************************************
+* El font-face funciona porque me he metido en la siguiente direccion          *
+* http://fonts.googleapis.com/css?family=Caesar+Dressing en la que google      *
+* te define el @font-face Caesar Dresing solo hay que copiar y pegar el codigo *
+* que viene definido. Otra opcion es en vez de hace @font-face es hacer        *
+* @impory url(http://fonts.googleapis.com/css?family=Caesar+Dressing)          *
+*******************************************************************************/	
+
+body{
+
+	background-image: url("im1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+}
+
+
+p {
+
+	font-family:"Fira Mono OT", times new roman;
+	color: black;
+}
+
+p2{
+	font-family: "Caesar Dressing", cursive;
+	color:black;
+}
+
+/* He creado mi propia etiqueta llamada p2*/
+
+h1{
+	line-height: 50%;
+	font-variant: small-caps;
+	text-decoration: underline;
+}
+
+
+
+/********************
+*	Definicion      *                 
+*					*
+*  Identidades div  *
+*					*
+*   topup y down	*
+********************/
+#topup{
+
+	width: 900px;
+	float: top-left;
+	margin: auto;
+}
+
+#down{
+
+	width: 900px;
+	float:bottom-left;
+	margin: auto;
+
+}
+
+
+
+

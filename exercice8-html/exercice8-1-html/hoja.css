@@ -1,0 +1,26 @@
+/*hoja de estilo del clk*/
+
+h2{
+
+	text-align: center;
+	color: blue;
+}
+
+div{
+
+	text-align: center;
+	border-color: black;
+	border : 2px solid black;
+	box-shadow: 0px 0px 25px 0px blue;
+	border-radius: 10px 10px 10px 10px;
+	font-size: 20px;
+	background-color: white;
+
+	
+}
+
+body{
+
+	background-image: url("im1.jpg") ;
+
+}

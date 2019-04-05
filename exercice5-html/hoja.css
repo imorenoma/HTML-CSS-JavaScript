@@ -1,0 +1,24 @@
+
+
+#box{
+      background:url(im0.jpg) repeat-x top center ,url() no-repeat bottom left,
+      url(im2.jpg) no-repeat bottom,url() no-repeat bottom,
+      url(im1.jpg) no-repeat right,url() no-repeat right;
+
+      height: 500px;
+      width: 400px;
+      margin: 0px;
+      
+      background-color: #141313;
+      border-radius: 50px;
+      box-shadow: 20px 0px 20px 0px blue;
+      margin-left: 450px;
+      margin-top: 50px;
+
+}
+
+body{
+
+      background-color: 
+}
+

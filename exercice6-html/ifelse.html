@@ -1,0 +1,39 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf8">
+	<title>If Else Script</title>
+</head>
+
+<body>
+
+	<h1>If/Else</h1>
+
+	<script type="text/javascript">		
+
+		var nombre = prompt("¿Quien descubrio América?");
+
+		if (isNaN(nombre) && (nombre == 'Cristobal Colón')) {
+
+			document.writeln( "Correcto, " + nombre + " descubrió América");
+
+		}
+
+		else if (nombre == null) {
+
+			document.writeln("Has pulsado cancelar F5 para actualizar");
+		}
+
+
+		else{
+
+			document.writeln("Su respuesta " + nombre + " no es correcta");
+		}
+
+
+
+	</script>
+
+
+</body>
+</html>

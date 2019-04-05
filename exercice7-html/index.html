@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset = "utf-8">
+	<title>Lista de Contenido de Propiedades</title>	
+	<link rel="stylesheet" type="text/css" href="hoja.css">
+
+</head>
+
+<body>
+
+	<h2>Window</h2>
+
+	<table id="tabla">
+
+	<tr><th>Propiedad </th><th> Valor</th></tr>
+
+	</table>
+
+	<script type="text/javascript">
+
+	var objeto = prompt("Dame nombre de objeto :");
+	var i, tabla = document.getElementById('tabla');
+
+	
+	
+
+	if(objeto == null){
+
+		document.writeln("Has pulsado cancelar F5 para refrescar");
+
+	}else{
+		for(i in window[objeto]){
+			
+			if(typeof window[objeto] == "object") {
+
+				tabla.innerHTML+="<tr><td>"+i+"</td><td>= "+ window[objeto][i]+ "</td></tr>";
+
+			}else{
+
+				alert( "No es imprimible");
+			}
+		}
+	}
+	</script>
+</body>
+</html>

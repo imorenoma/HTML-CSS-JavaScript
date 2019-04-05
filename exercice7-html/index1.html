@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset = "utf-8">
+	<title>Lista de Contenido de Propiedades</title>	
+	<link rel="stylesheet" type="text/css" href="hoja.css">
+
+</head>
+
+<body>
+
+	<h2>Window</h2>
+
+	<table id="tabla">
+
+	<tr><th>Propiedad </th><th> Valor</th></tr>
+
+	</table>
+
+	<script type="text/javascript">
+
+	
+	var i, tabla = document.getElementById('tabla');
+	var objeto = prompt("Dame nombre de objeto :");
+	var opcion = objeto.indexOf("this.");
+	var empty = true;
+	
+
+	
+
+	if(opcion===0){
+        objeto = objeto.substring(5);
+    }
+    
+    for(i in window[objeto]){
+        empty = false;
+        
+        if(typeof(window[objeto][i]) === 'object' || typeof(window[objeto][i]) === 'function'){
+
+            tabla.innerHTML+="<tr><td>no imprimible</td></tr>";
+
+        }else{
+                tabla.innerHTML+="<tr><td>"+i+"</td><td> = "+window[objeto][i]+"</td></tr>";           
+        }
+    }
+    if (empty){
+        document.write('<p> Pulse F5 para actualizar</p>');
+    }
+   
+</script>
+	
+	</script>
+</body>
+</html>

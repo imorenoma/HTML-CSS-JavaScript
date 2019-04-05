@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset = "utf-8">
+	<title>Botones</title>
+	<link rel="stylesheet" type="text/css" href="hoja.css">
+	<script>
+
+		function resp(){
+
+			var respuesta = document.getElementById('respuesta');
+			var resultado = document.getElementById('resultado');
+			
+			if(respuesta.value === 'Cristobal Colón' || respuesta.value === 'cristobal colón' ||respuesta.value=== 'CRISTOBAL COLÓN' ){
+
+				resultado.innerHTML = 'Respuesta correcta';
+			}else{
+
+				resultado.innerHTML= 'Respuesta incorrecta pulsa Reintentar';
+				
+			}
+
+		}
+
+
+
+
+	</script>
+
+</head>
+
+<body>
+
+	<h2>¿Quién descubrió América?</h2>
+
+	
+
+	<input type= "text" id = "respuesta" onclick="if(this.value=='Introduce respuesta')this.value='';" value = "Introduce respuesta">
+	<button type onclick = "resp()">Consultar</button>
+	<input   id = "refresh" type="button" onclick="document.location.reload(true);" value = "Reintentar">
+	<p><div id= "resultado"/></p>
+		
+
+
+</body>	
+</html>

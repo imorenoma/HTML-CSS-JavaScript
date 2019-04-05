@@ -1,0 +1,45 @@
+body{
+  font-family: 'Droid Sans', 'Helvetica', Arial, sans-serif;
+  background-color: #848484;
+}
+
+
+@font-face {
+  font-family: 'Caesar Dressing';
+  font-style: normal;  
+  font-weight: 400;
+  src: local('Caesar Dressing'), local('CaesarDressing-Regular'), url(http://themes.googleusercontent.com/static/fonts/caesardressing/v3/2T_WzBgE2Xz3FsyJMq34T2P6V2CHcxaChb7jOf5qsHM.woff) format('woff');
+}
+
+#marcosup{
+  font-family: "Caesar Dressing", cursive;
+  color:black;
+  text-align:  center;
+
+}
+
+
+#latlng{
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute; /* posición absoluta a navegador */
+  top: 0;             /* ajusta a borde de navegador */
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+
+#map{
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute; /* posición absoluta a navegador */
+  top: 70px;      /* 50px debajo de borde de navegador */
+  left: 0;        /* ajusta a borde de navegador */
+  right: 0;
+  bottom: 0;
+  background:#5882FA; /* verde si no hay mapa */
+  z-index: 0;
+}
+

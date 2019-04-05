@@ -1,0 +1,16 @@
+manifest.webapp
+
+{
+	
+	"version" : "1.0";
+	"name" : "Geolocalizazión",
+	"description" : "localizacion en mapa",
+	"launch_path": "index.html"
+	"developer"{ 
+
+		"name": "Iván",
+		"url": https://googledrive.com/host/0B8C1rhG17e9DT2hfcVpmaG1mSXM/index.html
+	},
+
+	default_locale:en
+}
