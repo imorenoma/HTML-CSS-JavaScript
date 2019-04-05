@@ -1,0 +1,31 @@
+
+/*En esta hoja css vamos a poner los elementos comunes de 
+todos los ficheros html y estructuras*/
+
+/***********************************
+*		ELEMENTOS COMUNES
+* body, h1,h2,he y p
+************************************/
+
+body{ 
+	background-image: url("fondonot.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+h1{color:#FE642E; font-family: "bolt"; font-size: 28px; } /*titular index*/
+
+h1{color:#A4A4A4; font-family: "bolt"; font-size: 24px; } /*titular noticia1 y noticia2*/
+h2{color: #A4A4A4; font-family:"times new roman"; font-size:16px;} /*titular2 noticia1 y noticia2*/
+
+h3{color: #58D3F7; font-family:"bolt"; font-size:24px;} /*titular3 noticia1*/
+h4{color: red; font-family: "bolt";font-size: 24px;} /*titular3 noticia2*/
+
+p{color: black; font-family: "comic sans Ms"; font-size: 14px ;}
+p1{font-size: 20px;} /*tamaño hiperenlaces del index*/
+p3{color: black ;font-size: 12px;background-color: white;}/*marcador de pagina noticia1*/
+p4{color: black;font-size: 12px;background-color: white;}/*marcador pagina noticia2*/
+
+
+
+
